@@ -1,8 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
-//import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.gif";
 import { useState, useEffect } from "react";
-import { update } from "tar";
 
 export const Banner = () => {
     // loop number indicates index as to which word is currently displayed on the screen
@@ -10,7 +9,7 @@ export const Banner = () => {
     // whether the word being typed out or being deleted, set to false initially because we start by typing the word
     const [isDeleting, setIsDeleting] = useState(false);
     // list of words to display
-    const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = [ "Software Engineer", "Student", "Creator"];
     // indicate the portion of the word being displayed
     const [text, setText] = useState("");
     // to determine how fast one letter comes up after the first one is typed
@@ -58,10 +57,10 @@ export const Banner = () => {
     return(
         <section className="banner" id='home'>
             <Container>
-                <Row className="align-items-center">
+                <Row className="align-items-left">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm Kristen `}<span className="wrap">{text}</span></h1>
+                        <h1>{`Hi I'm Kristen, a `}<span className="wrap">{text}</span></h1>
                         <p> Write something about yourself here</p>
                         <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
                     </Col>
