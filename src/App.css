@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: normal;
 }
 
-/************ Navbar Css ************/
+/* Navbar */
 .resize {
   padding-top: 10px;
   width: auto;
@@ -422,4 +422,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/* Footer */
+.footer {
+  padding: 0 0 50 0;
+  background-image: url("./assets/img/banner-bg.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
