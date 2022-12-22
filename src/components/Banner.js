@@ -58,10 +58,9 @@ export const Banner = () => {
         <section className="banner" id='home'>
             <Container>
                 <Row className="align-items-left">
-                    <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Portfolio</span>
+                    <Col className="add-pad" xs={12} md={6} xl={7}>
                         <h1>{`Hi I'm Kristen, a `}<span className="wrap">{text}</span></h1>
-                        <p> Write something about yourself here</p>
+                        <p>Welcome to my portfolio, feel free to look around!</p>
                         <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>

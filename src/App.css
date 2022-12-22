@@ -21,7 +21,7 @@ body {
   font-weight: 700;
   overflow-x: hidden;
   position: relative;
-  background-color: #7587e1 !important;
+  background-color: #8999e5 !important;
   color: #fff !important;
   font-family: 'stardew-valley' !important;
 }
@@ -37,6 +37,7 @@ h1,h2,h3,h4,h5,h6 {
   padding-top: 10px;
   width: auto;
   height: 75px;
+  padding-bottom: 10px;
 }
 nav.navbar {
   padding: 10px 0;
@@ -226,22 +227,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Banner */
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.jpg');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.banner .tagline {
-  font-weight: 700;
-  letter-spacing: 0.8px;
-  padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 35px;
-  margin-bottom: 16px;
-  display: inline-block;
+  margin-top: 20px;
+  padding: 200px 0 100px 0;
+  background-color: #8999e5;
 }
 .banner h1 {
   font-size: 65px;
@@ -252,7 +240,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #f1eff0;
   font-size: 30px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -264,9 +252,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   font-size: 35px;
   color: #fff;
-  margin-top: 60px;
+  margin-top: 20px;
   letter-spacing: 0.8px;
-  display: flex;
   align-items: center;
 }
 .banner button svg {
@@ -295,6 +282,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+.add-pad {
+  padding-top: 100px;
+}
 
 /* Projects */
 .project {
@@ -308,7 +298,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: #f1eff0;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -424,11 +414,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/* Footer */
+/* Contact CSS */
+.contact-img {
+  width: 300px;
+  height: auto;
+  padding-bottom: 20px;
+}
+.input-field {
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 10px 10px;
+}
+.message-box {
+  margin-bottom: 5px;
+  width: 630px;
+  padding: 10px 10px;
+}
+.contact-button {
+  width: 150px;
+  height: 25px;
+}
+
+/* Footer CSS */
 .footer {
   padding: 0 0 50 0;
-  background-image: url("./assets/img/banner-bg.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #7587e1;
 }
