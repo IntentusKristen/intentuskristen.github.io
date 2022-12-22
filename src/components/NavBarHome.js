@@ -35,7 +35,7 @@ export const NavBarHome = () => {
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
-          <Navbar.Brand href="/home">
+          <Navbar.Brand href="/">
             <img class='resize' src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -43,16 +43,16 @@ export const NavBarHome = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/home" exact className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link href="/" exact className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="/aboutme" className={activeLink === 'aboutme' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('aboutme')}>About Me</Nav.Link>
               <Nav.Link href="/projects" className={activeLink === 'projects' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             </Nav>
             <span className="navbar-text">
-                <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt="" /></a>
-                    <a href="#"><img src={navIcon2} alt="" /></a>
-                    <a href="#"><img src={navIcon3} alt="" /></a>
-                </div>
+              <div className="social-icon">
+                  <a href="https://www.linkedin.com/in/kristen-zhang/" target="_blank"><img src={navIcon1} alt="linkedin" /></a>
+                  <a href="https://www.facebook.com/kristen.zhang.9655" target="_blank"><img src={navIcon2} alt="facebook" /></a>
+                  <a href="https://www.instagram.com/intentuskristen/" target="_blank"><img src={navIcon3} alt="instagram" /></a>
+              </div>
                 <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span> </button>
             </span>
           </Navbar.Collapse>

@@ -5,20 +5,20 @@ import { Skills } from './components/Skills';
 import { ProjectComp } from './components/ProjectsComp';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, Link, BrowserRouter, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
+import { render } from '@testing-library/react';
 
 function App() {
   return (
     <>
       <Routes>
-          <Route path="/home" element={<Home/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/aboutme" element={<AboutMe/>}/>
           <Route path="/projects" element={<Projects/>}/>
-      </Routes>
-          
+      </Routes>    
     </>
   );
 }
