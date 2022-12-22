@@ -8,7 +8,7 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 // () basically placeholder for function()
-export const NavBar = () => {
+export const NavBarHome = () => {
     const [activeLink, setActiveLink] = useState('home');
     // detect whether user scrolled or not
     const [scrolled, setScrolled] = useState('false')

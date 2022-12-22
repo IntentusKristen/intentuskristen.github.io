@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import { NavBar } from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Skills } from './components/Skills';
 import { ProjectComp } from './components/ProjectsComp';
@@ -14,7 +13,6 @@ import Projects from './pages/Projects';
 function App() {
   return (
     <>
-    <NavBar/>
       <Routes>
           <Route path="/home" element={<Home/>}/>
           <Route path="/aboutme" element={<AboutMe/>}/>
