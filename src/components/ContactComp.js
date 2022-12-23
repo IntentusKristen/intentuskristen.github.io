@@ -1,10 +1,9 @@
-import React from 'react'
-import { NavBarAbout } from '../components/NavBarAbout'
+// need states to store the fields that others can fill in
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.gif";
 
-const AboutMe = () => {
+export const ContactComp = () => {
     // declare the initial states
     const formInitialDetails = {
         firstName: "",
@@ -52,9 +51,8 @@ const AboutMe = () => {
             setFormDetails({success: false, message: "Something went wrong, please try again later."});
         }
     }
-  return (
-    <div className="App">
-        <NavBarAbout/>
+
+    return(
         <section className="contact" id="connect">
             <Container className="contact-pad">
                 <Row className="align-items-center">
@@ -98,8 +96,5 @@ const AboutMe = () => {
                 </Row>
             </Container>
         </section>
-    </div>
-  )
+    )
 }
-
-export default AboutMe

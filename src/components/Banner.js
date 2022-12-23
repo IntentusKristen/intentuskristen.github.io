@@ -61,7 +61,7 @@ export const Banner = () => {
                     <Col className="add-pad" xs={12} md={6} xl={7}>
                         <h1>{`Hi I'm Kristen, a `}<span className="wrap">{text}</span></h1>
                         <p>Welcome to my portfolio, feel free to look around!</p>
-                        <button onClick={()=> console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                        <button onClick={() => window.location.href="/contact"}>Let's connect <ArrowRightCircle size={25}/></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img"/>

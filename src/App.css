@@ -416,8 +416,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Contact CSS */
 .contact-pad {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: 250px;
+}
+.contact-nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .contact-img {
   width: 300px;

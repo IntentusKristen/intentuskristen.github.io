@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Skills } from './components/Skills';
 import { ProjectComp } from './components/ProjectsComp';
-import { Contact } from './pages/Contact';
+import Contact from './pages/Contact';
 import { Footer } from './components/Footer';
 import { Routes, Route, Link, BrowserRouter, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
