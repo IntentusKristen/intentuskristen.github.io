@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavBarContact } from '../components/NavBarContact'
-import { ContactComp } from '../components/ContactComp'
+import { useState, useEffect } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import contactImg from "../assets/img/contact-img.gif";
 
 const Contact = () => {
   // declare the initial states
