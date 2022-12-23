@@ -53,7 +53,7 @@ export const NavBarHome = () => {
                   <a href="https://www.facebook.com/kristen.zhang.9655" target="_blank"><img src={navIcon2} alt="facebook" /></a>
                   <a href="https://www.instagram.com/intentuskristen/" target="_blank"><img src={navIcon3} alt="instagram" /></a>
               </div>
-                <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span> </button>
+                <button className="vvd" onClick={() => window.location.href="/contact"}><span>Let's Connect</span> </button>
             </span>
           </Navbar.Collapse>
         </Container>

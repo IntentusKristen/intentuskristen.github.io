@@ -54,31 +54,34 @@ export const Contact = () =>{
 
     return(
         <section className="contact" id="connect">
-            <Container>
+            <Container className="contact-pad">
                 <Row className="align-items-center">
                     <Col md={6}>
                         <img className="contact-img" src={contactImg} alt="Contact Us"/>
                     </Col>
                     <Col md={6}>
-                        <h2>Send Me a Message!</h2>
+                        <div className="d-flex justify-content-center">
+                            <h2>Send Me a Message!</h2>
+                        </div>
+                        
                         <form onSubmit={handleSubmit}>
                             <Row>
-                                <Col sm={6} className="px-1">
+                                <Col sm={6} className="px-1 d-flex justify-content-end">
                                     <input className="input-field" type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=> onFormUpdate('firstName', e.target.value)}/>
                                 </Col>
-                                <Col sm={6} className="px-1">
+                                <Col sm={6} className="px-1 d-flex justify-content-start">
                                     <input className="input-field" type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=> onFormUpdate('lastName', e.target.value)}/>
                                 </Col>
-                                <Col sm={6} className="px-1">
+                                <Col sm={6} className="px-1 d-flex justify-content-end">
                                     <input className="input-field" type="email" value={formDetails.email} placeholder="Email" onChange={(e)=> onFormUpdate('email', e.target.value)}/>
                                 </Col>
-                                <Col sm={6} className="px-1">
+                                <Col sm={6} className="px-1 d-flex justify-content-start">
                                     <input className="input-field" type="tel" value={formDetails.phone} placeholder="Phone" onChange={(e)=> onFormUpdate('phone', e.target.value)}/>
                                 </Col>
-                                <Col sm={12}>
+                                <Col sm={12} className="d-flex justify-content-center">
                                     <textarea className="message-box" row="6" value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate('message', e.target.value)}/>
                                 </Col>
-                                <Col>
+                                <Col className="d-flex justify-content-center">
                                     <button className="contact-button" type="submit"><span>{buttonText}</span></button>
                                 </Col>
                                 {
