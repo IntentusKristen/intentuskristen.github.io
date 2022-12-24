@@ -32,6 +32,9 @@ h1,h2,h3,h4,h5,h6 {
   line-height: normal;
 }
 
+p {
+  font-size: 2rem;
+}
 /* Navbar */
 .resize {
   padding-top: 10px;
@@ -415,8 +418,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /* Contact CSS */
-.contact-pad {
+.page-pad {
   padding-top: 250px;
+  padding-bottom: 165px;
 }
 .contact-nav {
   padding-top: 24px;

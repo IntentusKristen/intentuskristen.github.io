@@ -57,7 +57,7 @@ return(
     <div className='App'>
         <NavBarContact/>
     <section className="contact" id="connect">
-        <Container className="contact-pad">
+        <Container className="page-pad">
             <Row className="align-items-center">
                 <Col md={6} className="d-flex justify-content-center">
                     <img className="contact-img" src={contactImg} alt="Contact Us"/>
