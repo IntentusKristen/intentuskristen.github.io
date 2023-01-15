@@ -2,13 +2,13 @@ import React from 'react'
 import { NavBarAbout } from '../components/NavBarAbout'
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import contactImg from "../assets/img/contact-img.gif";
+import headshot from "../assets/img/headshot.jpg";
 
 const AboutMe = () => {
     // creating inline styling with react
     const padStyle = 
             {
-                paddingTop: "220px",
+                paddingTop: "200px",
             }
 
   return (
@@ -23,7 +23,7 @@ const AboutMe = () => {
                 </Row>
                 <Row>
                     <Col md={6} className="d-flex justify-content-center">
-                        <p>insert my picture here</p>
+                        <img className="headshot" src={headshot} alt="Headshot"/>
                     </Col>
                     <Col md={6}>
                         <div className="d-flex justify-content-center">

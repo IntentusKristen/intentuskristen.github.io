@@ -228,6 +228,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+/* About Me */
+.headshot {
+  width: 400px;
+  height: 380px;
+  object-fit: cover;
+}
+
 /* Banner */
 .banner {
   margin-top: 20px;
@@ -250,7 +257,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  border: none;
+  border: 2px;
   background: none;
   font-weight: 700;
   font-size: 35px;
