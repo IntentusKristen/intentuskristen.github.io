@@ -1,10 +1,24 @@
 /*Custom Fonts*/
 @font-face {
-  font-family: stardew-valley;
-  src: url(./assets/fonts/stardew-valley.ttf);
-  font-weight: 700;
+	font-family: Barlow;
+	src: url('./assets/fonts/Barlow-SemiBold.ttf');
+	font-weight: 700;
 }
-
+@font-face {
+	font-family: Barlow;
+	src: url('./assets/fonts/Barlow-SemiBoldItalic.ttf');
+	font-weight: 700;
+}
+@font-face {
+	font-family: Barlow;
+	src: url('./assets/fonts/Barlow-Regular.ttf');
+	font-weight: 500;
+}
+@font-face {
+	font-family: Barlow;
+	src: url('./assets/fonts/Barlow-ExtraLight.ttf');
+	font-weight: 400;
+}
 /*Default CSS*/
 * {
   margin: 0;
