@@ -5,11 +5,17 @@ import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.gif";
 
 const AboutMe = () => {
+    // creating inline styling with react
+    const padStyle = 
+            {
+                paddingTop: "220px",
+            }
+
   return (
     <div className="App">
         <NavBarAbout/>
         <section className="aboutme">
-            <Container className="page-pad">
+            <Container className="page-pad" style = {padStyle}>
                 <Row className="align-items-top">
                     <Col md={6} className="d-flex justify-content-center">
                         <h1>About Me</h1>
