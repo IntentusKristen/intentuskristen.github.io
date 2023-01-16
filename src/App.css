@@ -248,6 +248,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 380px;
   object-fit: cover;
 }
+.aboutme img {
+  border-radius: 30px;
+}
 
 /* Banner */
 .banner {
