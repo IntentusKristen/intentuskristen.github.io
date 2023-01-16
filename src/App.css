@@ -5,7 +5,7 @@
 	font-weight: 700;
 }
 @font-face {
-	font-family: Barlow;
+	font-family: "Barlow-italic";
 	src: url('./assets/fonts/Barlow-SemiBoldItalic.ttf');
 	font-weight: 700;
 }
@@ -37,7 +37,7 @@ body {
   position: relative;
   background-color: #8999e5 !important;
   color: #fff !important;
-  font-family: 'stardew-valley' !important;
+  font-family: Barlow !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -260,7 +260,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   display: block;
 }
 .banner p {
@@ -308,6 +308,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
+.italicized {
+  font-family: "Barlow-italic";
+}
+
 .add-pad {
   padding-top: 100px;
 }

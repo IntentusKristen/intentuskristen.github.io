@@ -9,7 +9,7 @@ export const Banner = () => {
     // whether the word being typed out or being deleted, set to false initially because we start by typing the word
     const [isDeleting, setIsDeleting] = useState(false);
     // list of words to display
-    const toRotate = [ "Software Engineer", "Student", "Creator"];
+    const toRotate = [ "Software Engineer.", "Student.", "Creator."];
     // indicate the portion of the word being displayed
     const [text, setText] = useState("");
     // to determine how fast one letter comes up after the first one is typed
@@ -59,7 +59,7 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-left">
                     <Col className="add-pad" xs={12} md={6} xl={7}>
-                        <h1>{`Hi I'm Kristen, a `}<span className="wrap">{text}</span></h1>
+                        <h1>{`Hi I'm Kristen, a `}<span className="wrap italicized">{text}</span></h1>
                         <p>Welcome to my portfolio, feel free to look around!</p>
                         <button onClick={() => window.location.href="/contact"}>My Resume<ArrowRightCircle size={25}/></button>
                     </Col>
