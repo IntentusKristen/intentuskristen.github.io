@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 /* Navbar */
 .resize {
@@ -250,6 +250,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .aboutme img {
   border-radius: 30px;
+}
+.aboutme p {
+  line-height: 102%;
+}
+.aboutme button {
+  border: 2px;
+  background: none;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+  margin-top: 0px;
+  letter-spacing: 0.8px;
+}
+.aboutme button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+.aboutme button:hover svg {
+  margin-left: 25px;
 }
 
 /* Banner */
