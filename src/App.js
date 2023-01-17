@@ -5,31 +5,26 @@ import { Skills } from './components/Skills';
 import { ProjectComp } from './components/ProjectsComp';
 import Contact from './pages/Contact';
 import { Footer } from './components/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
-import { render } from '@testing-library/react';
 import NavBar from './components/NavBar';
 import React from 'react';
+import { Banner } from './components/Banner';
 
-class App extends React.Component {
-  render() {
-    return (
-      <Router>
-        <div className="App">
-          <NavBar/>
-          <div className="content">
-            <Routes>
-              <Route exact path="/" element={ <Home/> } />
-              <Route exact path="/aboutme" element={ <AboutMe/>} />
-              <Route exact path="/contact" element={ <Contact/>} />
-            </Routes>
-          </div>
-        </div>
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <>
+      <NavBar/>
+      <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/aboutme" element={<AboutMe/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+      </Routes>    
+    </>
+  );
 }
 
 export default App;
