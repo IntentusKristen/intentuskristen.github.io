@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavBarContact } from '../components/NavBarContact'
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.png";
@@ -55,7 +54,6 @@ const handleSubmit = async (e) => {
 
 return(
     <div className='App'>
-        <NavBarContact/>
     <section className="contact" id="connect">
         <Container className="page-pad">
             <Row className="align-items-center">
