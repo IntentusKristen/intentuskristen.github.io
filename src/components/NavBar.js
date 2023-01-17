@@ -7,7 +7,7 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 // () basically placeholder for function()
-const NavBarHome = () => {
+const NavBar = () => {
     const activeLink = window.location.pathname;
     // detect whether user scrolled or not
     const [scrolled, setScrolled] = useState('false')
@@ -41,7 +41,7 @@ const NavBarHome = () => {
             <Nav className="me-auto">
               <Nav.Link href="/" exact className={activeLink === '/' ? 'active navbar-link': 'navbar-link'}>Home</Nav.Link>
               <Nav.Link href="/aboutme" className={activeLink === '/aboutme' ? 'active navbar-link': 'navbar-link'}>About Me</Nav.Link>
-              <Nav.Link href="/projects" className={activeLink === '/experience' ? 'active navbar-link': 'navbar-link'}>Experience</Nav.Link>
+              <Nav.Link href="/experience" className={activeLink === '/experience' ? 'active navbar-link': 'navbar-link'}>Experience</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -57,4 +57,4 @@ const NavBarHome = () => {
     )
 }
 
-export default NavBarHome;
+export default NavBar;
