@@ -1,6 +1,5 @@
 // need to import functionalities
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import { useState, useEffect, useDeferredValue } from "react";
 import logo from '../assets/img/logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
@@ -42,7 +41,7 @@ const NavBarHome = () => {
             <Nav className="me-auto">
               <Nav.Link href="/" exact className={activeLink === '/' ? 'active navbar-link': 'navbar-link'}>Home</Nav.Link>
               <Nav.Link href="/aboutme" className={activeLink === '/aboutme' ? 'active navbar-link': 'navbar-link'}>About Me</Nav.Link>
-              <Nav.Link href="/projects" className={activeLink === '/projects' ? 'active navbar-link': 'navbar-link'}>Projects</Nav.Link>
+              <Nav.Link href="/projects" className={activeLink === '/experience' ? 'active navbar-link': 'navbar-link'}>Experience</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
