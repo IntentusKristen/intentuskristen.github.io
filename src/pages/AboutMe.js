@@ -23,8 +23,7 @@ const AboutMe = () => {
                         <div className="d-flex justify-content-left" style={{textAlign: 'left',}}>
                             <p>👋🏼 - Hi I'm Kristen! <br></br> <br></br> 
                             📚 - I am currently in my third year at Western University, pursuing a dual degree in software engineering and business. <br></br> <br></br> 
-                            👩🏻‍💻  - My main coding languages are Python, JavaScript, and C, and I have been able to apply these skills in various projects -- you can check them out in the "Projects" tab! <br></br>
-                            </p>
+                            👩🏻‍💻  - My main coding languages are Python and JavaScript.</p>
                             
                         </div>
                         <button onClick={() => window.open(resume,"_blank")}>Check out my resume here<ArrowRightCircle size={25}/></button>
