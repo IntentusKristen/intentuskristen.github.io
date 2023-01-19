@@ -498,6 +498,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 150px;
   height: 25px;
 }
+.p danger {
+  color: red;
+}
+.p success {
+  color: green;
+}
 
 /* Footer CSS */
 .footer {
