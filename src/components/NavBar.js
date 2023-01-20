@@ -7,8 +7,8 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 // () basically placeholder for function()
-export const NavBar = () => {
-    const [activeLink, setActiveLink] = useState('home');
+const NavBar = () => {
+    const activeLink = window.location.pathname;
     // detect whether user scrolled or not
     const [scrolled, setScrolled] = useState('false')
 
@@ -27,14 +27,11 @@ export const NavBar = () => {
         return () => window.removeEventListener("scroll", onScroll);
     })
 
-    const onUpdateActiveLink = (value) => {
-        setActiveLink(value)
-    }
 
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img class='resize' src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -42,20 +39,22 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="#aboutme" className={activeLink === 'aboutme' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('aboutme')}>About Me</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="/" exact className={activeLink === '/' ? 'active navbar-link': 'navbar-link'}>Home</Nav.Link>
+              <Nav.Link href="/aboutme" className={activeLink === '/aboutme' ? 'active navbar-link': 'navbar-link'}>About Me</Nav.Link>
+              <Nav.Link href="/experience" className={activeLink === '/experience' ? 'active navbar-link': 'navbar-link'}>Experience</Nav.Link>
             </Nav>
             <span className="navbar-text">
-                <div className="social-icon">
-                    <a href="#"><img src={navIcon1} alt="" /></a>
-                    <a href="#"><img src={navIcon2} alt="" /></a>
-                    <a href="#"><img src={navIcon3} alt="" /></a>
-                </div>
-                <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span> </button>
+              <div className="social-icon">
+                  <a href="https://www.linkedin.com/in/kristen-zhang/" target="_blank"><img src={navIcon1} alt="linkedin" /></a>
+                  <a href="https://www.facebook.com/kristen.zhang.9655" target="_blank"><img src={navIcon2} alt="facebook" /></a>
+                  <a href="https://www.instagram.com/intentuskristen/" target="_blank"><img src={navIcon3} alt="instagram" /></a>
+              </div>
+                <button className="vvd" onClick={() => window.location.href="/contact"}><span>Let's Connect</span> </button>
             </span>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     )
 }
+
+export default NavBar;
