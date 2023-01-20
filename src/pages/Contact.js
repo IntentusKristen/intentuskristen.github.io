@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Col, Container, Row } from "react-bootstrap";
+import contactImg from "../assets/img/contact-img.png"
 
 const Contact = () => {
   const form = useRef();
@@ -7,7 +9,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_14xbwcj', 'template_5a1xr1c', form.current, 'ateXVpgMvpy00NNsT')
+    emailjs.sendForm('service_14xbwcj', 'template_pkjd44s', form.current, 'ateXVpgMvpy00NNsT')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -28,34 +30,29 @@ const Contact = () => {
                         <h2>Send Me a Message!</h2>
                     </div>
                     
-                    <form onSubmit={sendForm}>
+                    <form ref={form} onSubmit={sendEmail}>
                         <Row>
                             <Col sm={6} className="px-1 d-flex justify-content-end">
-                                <input className="input-field" type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e)=> onFormUpdate('firstName', e.target.value)}/>
+                                <input className="input-field" type="text" placeholder="First Name" name="first_name"/>
                             </Col>
                             <Col sm={6} className="px-1 d-flex justify-content-start">
-                                <input className="input-field" type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e)=> onFormUpdate('lastName', e.target.value)}/>
+                                <input className="input-field" type="text" placeholder="Last Name" name="last_name"/>
                             </Col>
                             <Col sm={6} className="px-1 d-flex justify-content-end">
-                                <input className="input-field" type="email" value={formDetails.email} placeholder="Email" onChange={(e)=> onFormUpdate('email', e.target.value)}/>
+                                <input className="input-field" type="email" placeholder="Email" name="user_email"/>
                             </Col>
                             <Col sm={6} className="px-1 d-flex justify-content-start">
-                                <input className="input-field" type="tel" value={formDetails.phone} placeholder="Phone" onChange={(e)=> onFormUpdate('phone', e.target.value)}/>
+                                <input className="input-field" type="tel" placeholder="Phone" name="user_phone"/>
                             </Col>
                             <Col sm={12} className="d-flex justify-content-center">
-                                <textarea className="message-box" row="6" value={formDetails.message} placeholder="Message" onChange={(e)=> onFormUpdate('message', e.target.value)}/>
+                                <textarea className="message-box" row="6" placeholder="Message" name="message"/>
                             </Col>
                             <Col className="d-flex justify-content-center">
-                                <button className="contact-button" type="submit"><span>{buttonText}</span></button>
+                                <button className="contact-button" type="submit"><span>Send</span></button>
                             </Col>
-                            {
-                                status.message &&
-                                <Col>
-                                    <p className={status.success === false ? "danger": "success"}></p>
-                                </Col>
-                            }
                         </Row>
                     </form>
+
                 </Col>
             </Row>
         </Container>
