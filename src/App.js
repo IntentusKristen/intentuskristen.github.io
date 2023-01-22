@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import NavBar from './components/NavBar';
 import React from 'react';
+import Experience from './pages/Experience';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/aboutme" element={<AboutMe/>}/>
           <Route path="/contact" element={<Contact/>}/>
-          <Route path="/experience" element={<Home/>}/>
+          <Route path="/experience" element={<Experience/>}/>
       </Routes>    
     </>
   );
