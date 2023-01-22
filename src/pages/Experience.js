@@ -5,7 +5,7 @@ import { MyTimeline } from '../components/MyTimeline'
 const Experience = () => {
     const padStyle = 
             {
-                paddingTop: "200px",
+                paddingTop: "150px",
             }
 
   return (
@@ -13,12 +13,16 @@ const Experience = () => {
     <section className='experience'>
         <Container>
             <Row>
+                <Col sm={2}></Col>
                 <Col>
-                <MyTimeline/>
+                    <h2 style={{color: 'black'}}>Work Experience</h2>
+                    <MyTimeline/>
+                
                 </Col>
+                <Col sm={2}></Col>
             </Row>
             <Row>
-                
+
             </Row>
         </Container>
     </section>
