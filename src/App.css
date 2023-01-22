@@ -1,6 +1,6 @@
 /*Custom Fonts*/
 @font-face {
-	font-family: Barlow;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
 	src: url('./assets/fonts/Barlow-SemiBold.ttf');
 	font-weight: 700;
 }
@@ -37,13 +37,29 @@ body {
   position: relative;
   background-color: #92bbff !important;
   color: #fff !important;
-  font-family: Barlow !important;
+  font-family: "Roboto","Helvetica","Arial",sans-serif !important;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h4,h5,h6 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: medium;
+  font-weight: 700;
+  text-align: left;
+}
+
+h3{
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: 2rem;
 }
 
 p {
