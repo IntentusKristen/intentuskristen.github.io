@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import { MyTimeline } from '../components/MyTimeline'
+import { WorkTimeline } from '../components/WorkTimeline'
+import { LeadershipTimeline } from '../components/LeadershipTimeline'
 
 const Experience = () => {
     const padStyle = 
@@ -16,13 +17,20 @@ const Experience = () => {
                 <Col sm={2}></Col>
                 <Col>
                     <h2 style={{color: 'black'}}>Work Experience</h2>
-                    <MyTimeline/>
-                
+                    <WorkTimeline/>
                 </Col>
                 <Col sm={2}></Col>
             </Row>
             <Row>
-
+            <Row>
+            <br></br>
+            </Row>
+            <Col sm={2}></Col>
+                <Col>
+                    <h2 style={{color: 'black'}}>Leadership</h2>
+                    <LeadershipTimeline/>
+                </Col>
+                <Col sm={2}></Col>
             </Row>
         </Container>
     </section>

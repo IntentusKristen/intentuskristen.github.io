@@ -10,7 +10,7 @@ import CodeIcon from '@mui/icons-material/Code'
 import QueryStatsIcon from '@mui/icons-material/QueryStats'
 import BrushIcon from '@mui/icons-material/Brush'
 
-export const MyTimeline = () => {
+export const WorkTimeline = () => {
   return (
     <div>
     <Timeline
