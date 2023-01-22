@@ -2,6 +2,7 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://intentuskristen.github.io",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",
