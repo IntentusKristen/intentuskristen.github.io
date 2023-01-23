@@ -7,6 +7,7 @@ import AboutMe from './pages/AboutMe';
 import NavBar from './components/NavBar';
 import React from 'react';
 import Experience from './pages/Experience';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
           <Route path="/aboutme" element={<AboutMe/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/experience" element={<Experience/>}/>
-      </Routes>    
+      </Routes>
+      <Footer/>
     </>
   );
 }
