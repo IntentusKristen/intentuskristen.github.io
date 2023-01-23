@@ -1,5 +1,6 @@
 import React from 'react'
 import {Container, Row, Col, Nav} from 'react-bootstrap'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 export const Footer = () => {
   return (
