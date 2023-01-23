@@ -38,11 +38,11 @@ const Contact = () => {
                             <Col sm={6} className="px-1 d-flex justify-content-start">
                                 <input className="input-field" type="text" placeholder="Last Name" name="last_name"/>
                             </Col>
-                            <Col sm={6} className="px-1 d-flex justify-content-end">
-                                <input className="input-field" type="email" placeholder="Email" name="user_email"/>
+                            <Col sm={12} className="px-1 d-flex justify-content-center">
+                                <input className="input-field" style={{width: '610px'}} type="email" placeholder="Email" name="user_email"/>
                             </Col>
-                            <Col sm={6} className="px-1 d-flex justify-content-start">
-                                <input className="input-field" type="tel" placeholder="Phone" name="user_phone"/>
+                            <Col sm={12} className="px-1 d-flex justify-content-center">
+                                <input className="input-field" style={{width: '610px'}} type="tel" placeholder="Subject Line" name="subject_line"/>
                             </Col>
                             <Col sm={12} className="d-flex justify-content-center">
                                 <textarea className="message-box" row="6" placeholder="Message" name="message"/>

@@ -37,7 +37,7 @@ body {
   position: relative;
   background-color: #92bbff !important;
   color: #fff !important;
-  font-family: "Roboto","Helvetica","Arial",sans-serif !important;
+  font-family: Barlow !important;
 }
 
 h1,h4,h5,h6 {
@@ -509,20 +509,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 5px;
   width: 610px;
   padding: 10px 10px;
+  height: 100px;
 }
 .contact-button {
   width: 150px;
   height: 25px;
 }
-.p danger {
-  color: red;
-}
-.p success {
-  color: green;
-}
 
 /* Footer CSS */
 .footer {
-  padding: 0 0 50 0;
-  background-color: #7587e1;
+  padding: 100px 0 10px 0;
+}
+.footer .nav-link{
+  color: #fff!important;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.footer p{
+  font-size: 1rem;
+  font-weight: 600;
 }
