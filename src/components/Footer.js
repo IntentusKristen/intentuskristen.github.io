@@ -26,7 +26,7 @@ export const Footer = () => {
         </div>
       </Row>
       <Row>
-        <p className='d-flex justify-content-center'>Made with ♥ by Kristen Zhang</p>
+        <p className='d-flex justify-content-center' style={{paddingTop: '4px'}}>Made with ♥ by Kristen Zhang</p>
       </Row>
       </Container>
     </section>
