@@ -270,13 +270,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
 }
 .aboutme p {
-  line-height: 102%;
+  line-height: 120%;
+  font-size: 1.3rem;
 }
 .aboutme button {
   border: 2px;
   background: none;
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 600;
+  font-size: 25px;
   color: #fff;
   margin-top: 0px;
   letter-spacing: 0.8px;
@@ -307,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
   color: #f1eff0;
-  font-size: 30px;
+  font-size: 25px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
