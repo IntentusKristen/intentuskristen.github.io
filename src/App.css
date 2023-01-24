@@ -1,23 +1,23 @@
 /*Custom Fonts*/
 @font-face {
-	font-family: "Roboto","Helvetica","Arial",sans-serif;
-	src: url('./assets/fonts/Barlow-SemiBold.ttf');
+	font-family: Roboto Mono, monospace, sans-serif!important;
+	src: url('./assets/fonts/RobotoMono-Bold.ttf');
 	font-weight: 700;
 }
 @font-face {
-	font-family: "Barlow-italic";
-	src: url('./assets/fonts/Barlow-SemiBoldItalic.ttf');
+	font-family: 'Roboto-italic', monospace, sans-serif;
+	src: url('./assets/fonts/RobotoMono-BoldItalic.ttf');
 	font-weight: 700;
 }
 @font-face {
-	font-family: Barlow;
-	src: url('./assets/fonts/Barlow-Regular.ttf');
-	font-weight: 500;
-}
-@font-face {
-	font-family: Barlow;
-	src: url('./assets/fonts/Barlow-ExtraLight.ttf');
+	font-family: Roboto Mono, monospace, sans-serif;
+	src: url('./assets/fonts/RobotoMono-Regular.ttf');
 	font-weight: 400;
+}
+@font-face {
+	font-family: Roboto Mono, monospace, sans-serif;
+	src: url('./assets/fonts/RobotoMono-Light.ttf');
+	font-weight: 300;
 }
 /*Default CSS*/
 * {
@@ -39,7 +39,7 @@ body {
   position: relative;
   background-color: #92bbff !important;
   color: #fff !important;
-  font-family: Barlow !important;
+  font-family: Roboto Mono, monospace, sans-serif!important;
 }
 
 h1,h4,h5,h6 {
@@ -351,7 +351,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 .italicized {
-  font-family: "Barlow-italic";
+  font-family: 'Roboto-italic', sans-serif;
 }
 
 .add-pad {
@@ -398,9 +398,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff!important;
   text-decoration: underline;
   font-weight: 600;
+  font-size: 0.8rem;
 }
 .footer p{
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 .footer-icon a {
