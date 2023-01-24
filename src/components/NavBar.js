@@ -4,7 +4,7 @@ import { useState, useEffect, useDeferredValue } from "react";
 import logo from '../assets/img/logo.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ShareIcon from '@mui/icons-material/Share';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 // () basically placeholder for function()
 const NavBar = () => {
@@ -45,9 +45,9 @@ const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
+                  <a href="https://www.facebook.com/kristen.zhang.9655/" target="_blank" ><span style={{width: '59.25%'}}><FacebookIcon sx={{color: 'white'}}/></span></a>
                   <a href="https://www.linkedin.com/in/kristen-zhang/" target="_blank"><span><LinkedInIcon sx={{color: 'white'}}/></span></a>
-                  <a href="https://www.instagram.com/intentuskristen/" target="_blank"><span><GitHubIcon sx={{color: 'white'}}/></span></a>
-                  <a href="https://www.instagram.com/intentuskristen/" target="_blank" ><span><ShareIcon sx={{color: 'white'}}/></span></a>
+                  <a href="https://github.com/IntentusKristen" target="_blank"><span style={{width: '59.25%'}}><GitHubIcon sx={{color: 'white'}}/></span></a>
               </div>
                 <button className="vvd" onClick={() => window.location.href="/contact"}><span>Let's Connect</span> </button>
             </span>
