@@ -10,7 +10,7 @@ export const Footer = () => {
       <Container>
       <Row>
         <Col>
-          <Nav className="me-auto d-flex justify-content-center 6">
+          <Nav className="me-auto d-flex justify-content-center">
               <Nav.Link href="/" >Home</Nav.Link>
               <Nav.Link href="/aboutme" >About Me</Nav.Link>
               <Nav.Link href="/experience">Experience</Nav.Link>

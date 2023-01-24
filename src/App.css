@@ -5,11 +5,6 @@
 	font-weight: 700;
 }
 @font-face {
-	font-family: 'Roboto-italic', monospace, sans-serif;
-	src: url('./assets/fonts/RobotoMono-BoldItalic.ttf');
-	font-weight: 700;
-}
-@font-face {
 	font-family: Roboto Mono, monospace, sans-serif;
 	src: url('./assets/fonts/RobotoMono-Regular.ttf');
 	font-weight: 400;
@@ -351,9 +346,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }
-.italicized {
-  font-family: 'Roboto-italic', sans-serif;
-}
 
 .add-pad {
   padding-top: 100px;
@@ -361,7 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Contact CSS */
 .page-pad {
-  padding-top: 200px;
+  padding-top: 250px;
   padding-bottom: 50px;
 }
 .contact-nav {
@@ -375,16 +367,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .input-field {
   margin-bottom: 10px;
-  width: 300px;
+  width: 100%;
   padding: 10px 10px;
   align-items: center;
   justify-content: center;
 }
 .message-box {
   margin-bottom: 5px;
-  width: 610px;
+  width: 100%;
   padding: 10px 10px;
   height: 100px;
+  align-items: center;
+  justify-content: center;
 }
 .contact-button {
   width: 150px;
@@ -394,7 +388,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Footer CSS */
 .footer {
   padding: 100px 0 5px 0;
+  
 }
+
 .footer .nav-link{
   color: #fff!important;
   text-decoration: underline;
