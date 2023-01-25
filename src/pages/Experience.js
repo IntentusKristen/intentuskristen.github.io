@@ -6,7 +6,7 @@ import { LeadershipTimeline } from '../components/LeadershipTimeline'
 const Experience = () => {
     const padStyle = 
             {
-                paddingTop: "200px",
+                paddingTop: "150px",
             }
 
   return (
@@ -27,7 +27,7 @@ const Experience = () => {
             </Row>
             <Col sm={1}></Col>
                 <Col>
-                    <h2 style={{color: 'black'}}><u><b>Leadership</b></u></h2>
+                    <h2 style={{color: 'white'}}><u><b>Leadership</b></u></h2>
                     <LeadershipTimeline/>
                 </Col>
                 <Col sm={1}></Col>
