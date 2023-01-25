@@ -8,9 +8,10 @@ export const Footer = () => {
   return (
     <section className='footer'>
       <Container>
+      <div className='footer-cont'>
       <Row>
         <Col>
-          <Nav className="me-auto d-flex justify-content-center 6">
+          <Nav className="me-auto d-flex justify-content-center">
               <Nav.Link href="/" >Home</Nav.Link>
               <Nav.Link href="/aboutme" >About Me</Nav.Link>
               <Nav.Link href="/experience">Experience</Nav.Link>
@@ -28,6 +29,7 @@ export const Footer = () => {
       <Row>
         <p className='d-flex justify-content-center' style={{paddingTop: '4px'}}>Made with ♥ by Kristen Zhang</p>
       </Row>
+      </div>
       </Container>
     </section>
 

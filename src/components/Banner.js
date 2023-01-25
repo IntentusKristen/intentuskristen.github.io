@@ -60,7 +60,7 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-left">
                     <Col className="add-pad" xs={12} md={6} xl={7}>
-                        <h1>{`Hi I'm Kristen, a `}<span className="wrap italicized">{text}</span></h1>
+                        <h1>{`Hi I'm Kristen, a `}<span className="wrap"><i>{text}</i></span></h1>
                         <p>Welcome to my portfolio, feel free to look around!</p>
                         <button onClick={() => window.open(resume,"_blank")}>My Resume<ArrowRightCircle size={25}/></button>
                     </Col>
