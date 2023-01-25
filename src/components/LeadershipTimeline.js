@@ -9,8 +9,6 @@ import { Typography } from '@mui/material'
 import GroupsIcon from '@mui/icons-material/Groups'
 import DesignServicesIcon from '@mui/icons-material/DesignServices'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import RobotoMono from '../assets/fonts/RobotoMono-Bold.ttf'
-import { fontSize } from '@mui/system'
 
 export const LeadershipTimeline = () => {
   const theme = createTheme({
@@ -22,7 +20,7 @@ export const LeadershipTimeline = () => {
     ].join(','),
       h5: {
         fontWeight: 700,
-        fontSize: 30
+        fontSize: 25
       },
       p: {
         fontWeight: 600

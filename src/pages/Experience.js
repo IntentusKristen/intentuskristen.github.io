@@ -6,7 +6,7 @@ import { LeadershipTimeline } from '../components/LeadershipTimeline'
 const Experience = () => {
     const padStyle = 
             {
-                paddingTop: "200px",
+                paddingTop: "150px",
             }
 
   return (

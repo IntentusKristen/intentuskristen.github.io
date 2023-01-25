@@ -9,9 +9,31 @@ import { Typography } from '@mui/material'
 import CodeIcon from '@mui/icons-material/Code'
 import QueryStatsIcon from '@mui/icons-material/QueryStats'
 import BrushIcon from '@mui/icons-material/Brush'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
 
 export const WorkTimeline = () => {
+  const theme = createTheme({
+    typography: {
+      fontFamily: [
+        'monospace',
+        'sans-serif',
+        'Roboto'
+    ].join(','),
+      h5: {
+        fontWeight: 700,
+        fontSize: 25
+      },
+      p: {
+        fontWeight: 600
+      },
+      subtitle1: {
+        fontSize: 15
+      }}
+      
+  });
+
   return (
+    <ThemeProvider theme={theme}>
     <div>
     <Timeline
       sx={{
@@ -72,5 +94,6 @@ export const WorkTimeline = () => {
         </TimelineItem>
     </Timeline>
     </div>
+    </ThemeProvider>
   )
 }
