@@ -14,23 +14,23 @@ const Experience = () => {
     <section className='experience'>
         <Container>
             <Row>
-                <Col sm={2}></Col>
+                <Col sm={1}></Col>
                 <Col>
                     <h2 style={{color: 'white'}}><u><b>Work Experience</b></u></h2>
                     <WorkTimeline/>
                 </Col>
-                <Col sm={2}></Col>
+                <Col sm={1}></Col>
             </Row>
             <Row>
             <Row>
             <br></br>
             </Row>
-            <Col sm={2}></Col>
+            <Col sm={1}></Col>
                 <Col>
                     <h2 style={{color: 'black'}}><u><b>Leadership</b></u></h2>
                     <LeadershipTimeline/>
                 </Col>
-                <Col sm={2}></Col>
+                <Col sm={1}></Col>
             </Row>
         </Container>
     </section>

@@ -17,7 +17,7 @@ const AboutMe = () => {
             <Container style={padStyle}>
                 <Row className="d-flex justify-content-center">
                 <Col md={1}></Col>
-                    <Col md={5} className="d-flex justify-content-center">
+                    <Col md={5} className="d-flex justify-content-center align-items-center">
                         <img className="headshot" src={headshot} alt="Headshot"/>
                     </Col>
                     <Col md={5}>
@@ -26,8 +26,10 @@ const AboutMe = () => {
                             
                             <p>👋🏼 - I'm Kristen! <br></br>
                             📚 - I am currently in my third year at Western University, pursuing a dual degree in software engineering and business.<br></br> 
-                            👩🏻‍💻  - My main coding languages are Python and JavaScript.</p>
-                            
+                            👩🏻‍💻 - My main coding languages are Python and JavaScript.<br></br><br></br>
+                            I'm a curious and driven individual who loves to learn new things. I'm super interested in anything tech related, especially topics related to scalability, product management, and web development.
+                            </p>
+
                         </div>
                         <button onClick={() => window.open(resume,"_blank")}>Check out my resume here<ArrowRightCircle size={25}/></button>
                     </Col>

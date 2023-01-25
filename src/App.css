@@ -388,7 +388,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Footer CSS */
 .footer {
   padding: 100px 0 5px 0;
-  
+  bottom: 0;
 }
 
 .footer .nav-link{
@@ -403,4 +403,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .footer-icon a {
   margin-right: 15px;
+}
+
+.footer-cont {
+  bottom: 0;
+  position:relative;
 }
