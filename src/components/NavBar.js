@@ -8,8 +8,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 // () basically placeholder for function()
 const NavBar = () => {
-    const activeLink = window.location.href;
-    console.log('pathname is' + window.location.href)
+    const [activeLink, setActiveLink ]= useState('/');
     // detect whether user scrolled or not
     const [scrolled, setScrolled] = useState('false')
 
@@ -26,7 +25,11 @@ const NavBar = () => {
 
         // remove event listeners when you don't plan on using them anymore
         return () => window.removeEventListener("scroll", onScroll);
-    })
+    }, [])
+
+    const onUpdateActiveLink = (value) => {
+      setActiveLink(value);
+    }
 
 
     return (
@@ -40,9 +43,9 @@ const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/" exact className={activeLink === 'http://localhost:3000/' ? 'active navbar-link': 'navbar-link'}>Home</Nav.Link>
-              <Nav.Link href="/#/aboutme" exact className={activeLink === 'http://localhost:3000/#/aboutme' ? 'active navbar-link': 'navbar-link'}>About Me</Nav.Link>
-              <Nav.Link href="/#/experience" exact className={activeLink === 'http://localhost:3000/#/experience' ? 'active navbar-link': 'navbar-link'}>Experience</Nav.Link>
+              <Nav.Link href="/" exact className={activeLink === '/' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('/')}>Home</Nav.Link>
+              <Nav.Link href="/#/aboutme" exact className={activeLink === '/#/aboutme' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('/#/aboutme')}>About Me</Nav.Link>
+              <Nav.Link href="/#/experience" exact className={activeLink === '/#/experience' ? 'active navbar-link': 'navbar-link'} onClick={() => onUpdateActiveLink('/#/experience')}>Experience</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
