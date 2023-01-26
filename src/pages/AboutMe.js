@@ -21,7 +21,7 @@ const AboutMe = () => {
                         <img className="headshot" src={headshot} alt="Headshot"/>
                     </Col>
                     <Col md={5}>
-                    <h1 style={{textAlign: 'left',}}><b>Hello 🤍</b></h1>
+                    <h1 style={{textAlign: 'left',}}><b>Hello, nice to meet you 🤍</b></h1>
                         <div className="d-flex justify-content-left" style={{textAlign: 'left'}}>
                             
                             <p>👋🏼 - I'm Kristen! <br></br>
