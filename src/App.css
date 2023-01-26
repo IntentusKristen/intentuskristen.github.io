@@ -97,6 +97,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 .social-icon {
     display: inline-block;
@@ -141,6 +142,7 @@ span.navbar-text {
   padding: 10px 20px;
   font-size: 20px;
   margin-left: 18px;
+  margin-right: 18px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;

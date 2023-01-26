@@ -85,7 +85,7 @@ const NavBar = () => {
 
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
-        <Container>
+        <Container style={{paddingLeft: '0', paddingRight: '0'}}>
           <Navbar.Brand href="/">
             <img class='resize' src={logo} alt="Logo" />
           </Navbar.Brand>
@@ -103,9 +103,10 @@ const NavBar = () => {
                   <a href="https://www.facebook.com/kristen.zhang.9655/" target="_blank" ><span style={{width: '59.25%'}}><FacebookIcon sx={{color: 'white'}}/></span></a>
                   <a href="https://www.linkedin.com/in/kristen-zhang/" target="_blank"><span><LinkedInIcon sx={{color: 'white'}}/></span></a>
                   <a href="https://github.com/IntentusKristen" target="_blank"><span style={{width: '59.25%'}}><GitHubIcon sx={{color: 'white'}}/></span></a>
+                  <button className="vvd" onClick={() => window.location.href="/#/contact"}><span>Let's Connect</span> </button>
+                <FormControlLabel sx = {{marginRight: 0}} control={<MaterialUISwitch sx={{ m: 1, marginRight: 0 }} defaultChecked />}/>
               </div>
-                <button className="vvd" onClick={() => window.location.href="/#/contact"}><span>Let's Connect</span> </button>
-                <FormControlLabel control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}/>
+                
             </span>
           </Navbar.Collapse>
         </Container>
