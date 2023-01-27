@@ -260,6 +260,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 400px;
   height: 380px;
   object-fit: cover;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .aboutme img {
   border-radius: 30px;
