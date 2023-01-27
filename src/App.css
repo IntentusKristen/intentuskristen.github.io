@@ -409,3 +409,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   position:relative;
 }
+
+/* Images */
+banner-img{
+  background-image: url('assets/img/hello-kitty-clip-art-cartoon-clip-art-1.png');
+  width: 400px;
+  height: auto;
+}

@@ -9,11 +9,28 @@ import Switch, { SwitchProps } from '@mui/material/Switch';
 import { styled } from '@mui/material/styles';
 import FormControlLabel from '@mui/material/FormControlLabel';
 
+
+
 // () basically placeholder for function()
 const NavBar = () => {
+
+  const [theme, setTheme ] = useState('blue');
+  const toggleTheme = () => {
+    if (theme === 'blue') {
+      setTheme('pink');
+    } 
+    else {
+      setTheme('blue');
+    }
+  };
+
+    useEffect(() => {
+    document.body.className = theme;
+    }, [theme]);
+
     const [activeLink, setActiveLink ]= useState('/');
     // detect whether user scrolled or not
-    const [scrolled, setScrolled] = useState('false')
+    const [scrolled, setScrolled] = useState('false');
 
     useEffect(() => {
         const onScroll = () => {
@@ -108,7 +125,7 @@ const NavBar = () => {
                   <a href="https://www.linkedin.com/in/kristen-zhang/" target="_blank"><span><LinkedInIcon sx={{color: 'white'}}/></span></a>
                   <a href="https://github.com/IntentusKristen" target="_blank"><span style={{width: '59.25%'}}><GitHubIcon sx={{color: 'white'}}/></span></a>
                   <button className="vvd" onClick={() => window.location.href="/#/contact"}><span>Let's Connect</span> </button>
-                <FormControlLabel sx = {{marginRight: 0}} control={<MUISwitch sx={{ m: 1, marginRight: 0 }} defaultChecked />}/>
+                <FormControlLabel sx = {{marginRight: 0}} control={<MUISwitch sx={{ m: 1, marginRight: 0 }} defaultChecked/>}/>
               </div>
                 
             </span>
