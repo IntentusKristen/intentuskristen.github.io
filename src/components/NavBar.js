@@ -38,7 +38,7 @@ const NavBar = () => {
     const MUISwitch = styled((props) => (
       <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
     ))(({ theme }) => ({
-      width: 42,
+      width: 52,
       height: 26,
       padding: 0,
       '& .MuiSwitch-switchBase': {
@@ -46,10 +46,10 @@ const NavBar = () => {
         margin: 2,
         transitionDuration: '300ms',
         '&.Mui-checked': {
-          transform: 'translateX(16px)',
+          transform: 'translateX(26px)',
           color: '#fff',
           '& + .MuiSwitch-track': {
-            backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#65C466',
+            backgroundColor: theme.palette.mode === 'dark' ? 'yellow' : '#03a6d7',
             opacity: 1,
             border: 0,
           },
@@ -58,7 +58,7 @@ const NavBar = () => {
           },
         },
         '&.Mui-focusVisible .MuiSwitch-thumb': {
-          color: '#33cf4d',
+          color: '#03a6d7',
           border: '6px solid #fff',
         },
         '&.Mui-disabled .MuiSwitch-thumb': {
@@ -78,7 +78,7 @@ const NavBar = () => {
       },
       '& .MuiSwitch-track': {
         borderRadius: 26 / 2,
-        backgroundColor: theme.palette.mode === 'light' ? '#E9E9EA' : '#39393D',
+        backgroundColor: theme.palette.mode === 'light' ? '#f3082e' : 'yellow',
         opacity: 1,
         transition: theme.transitions.create(['background-color'], {
           duration: 500,
