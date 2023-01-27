@@ -218,6 +218,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .App {
   text-align: center;
+  padding-bottom: 100px;
 }
 
 .App-logo {
@@ -290,7 +291,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Banner */
 .banner {
   margin-top: 20px;
-  padding: 200px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-color: #92bbff;
 }
 .banner h1 {
@@ -387,8 +388,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Footer CSS */
 .footer {
-  padding: 100px 0 5px 0;
+  padding: 0 0 5px 0;
   bottom: 0;
+  width: 100%;
+  position: block;
 }
 
 .footer .nav-link{
@@ -405,7 +408,3 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-right: 15px;
 }
 
-.footer-cont {
-  bottom: 0;
-  position:relative;
-}

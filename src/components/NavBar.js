@@ -5,9 +5,6 @@ import logo from '../assets/img/logo.png';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import Switch, { SwitchProps } from '@mui/material/Switch';
-import { styled } from '@mui/material/styles';
-import FormControlLabel from '@mui/material/FormControlLabel';
 
 // () basically placeholder for function()
 const NavBar = () => {
@@ -34,59 +31,6 @@ const NavBar = () => {
       setActiveLink(value);
     }
 
-    // MUI customized switch
-    const MUISwitch = styled((props) => (
-      <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
-    ))(({ theme }) => ({
-      width: 52,
-      height: 26,
-      padding: 0,
-      '& .MuiSwitch-switchBase': {
-        padding: 0,
-        margin: 2,
-        transitionDuration: '300ms',
-        '&.Mui-checked': {
-          transform: 'translateX(26px)',
-          color: '#fff',
-          '& + .MuiSwitch-track': {
-            backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#65C466',
-            opacity: 1,
-            border: 0,
-          },
-          '&.Mui-disabled + .MuiSwitch-track': {
-            opacity: 0.5,
-          },
-        },
-        '&.Mui-focusVisible .MuiSwitch-thumb': {
-          color: '#33cf4d',
-          border: '6px solid #fff',
-        },
-        '&.Mui-disabled .MuiSwitch-thumb': {
-          color:
-            theme.palette.mode === 'light'
-              ? theme.palette.grey[100]
-              : theme.palette.grey[600],
-        },
-        '&.Mui-disabled + .MuiSwitch-track': {
-          opacity: theme.palette.mode === 'light' ? 0.7 : 0.3,
-        },
-      },
-      '& .MuiSwitch-thumb': {
-        boxSizing: 'border-box',
-        width: 22,
-        height: 22,
-      },
-      '& .MuiSwitch-track': {
-        borderRadius: 26 / 2,
-        backgroundColor: theme.palette.mode === 'light' ? '#E9E9EA' : '#39393D',
-        opacity: 1,
-        transition: theme.transitions.create(['background-color'], {
-          duration: 500,
-        }),
-      },
-    }));
-    
-
     return (
         <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
         <Container style={{paddingLeft: '0', paddingRight: '0'}}>
@@ -108,7 +52,6 @@ const NavBar = () => {
                   <a href="https://www.linkedin.com/in/kristen-zhang/" target="_blank"><span><LinkedInIcon sx={{color: 'white'}}/></span></a>
                   <a href="https://github.com/IntentusKristen" target="_blank"><span style={{width: '59.25%'}}><GitHubIcon sx={{color: 'white'}}/></span></a>
                   <button className="vvd" onClick={() => window.location.href="/#/contact"}><span>Let's Connect</span> </button>
-                <FormControlLabel sx = {{marginRight: 0}} control={<MUISwitch sx={{ m: 1, marginRight: 0 }} defaultChecked />}/>
               </div>
                 
             </span>

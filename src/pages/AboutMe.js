@@ -9,6 +9,7 @@ const AboutMe = () => {
     const padStyle = 
             {
                 paddingTop: "200px",
+                paddingBottom: "50px"
             }
 
   return (
