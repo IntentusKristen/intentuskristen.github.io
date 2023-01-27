@@ -38,7 +38,7 @@ const NavBar = () => {
     const MUISwitch = styled((props) => (
       <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
     ))(({ theme }) => ({
-      width: 52,
+      width: 42,
       height: 26,
       padding: 0,
       '& .MuiSwitch-switchBase': {
@@ -46,7 +46,7 @@ const NavBar = () => {
         margin: 2,
         transitionDuration: '300ms',
         '&.Mui-checked': {
-          transform: 'translateX(26px)',
+          transform: 'translateX(16px)',
           color: '#fff',
           '& + .MuiSwitch-track': {
             backgroundColor: theme.palette.mode === 'dark' ? '#2ECA45' : '#65C466',
