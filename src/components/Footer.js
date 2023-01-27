@@ -13,9 +13,9 @@ export const Footer = () => {
         <Col>
           <Nav className="me-auto d-flex justify-content-center">
               <Nav.Link href="/" >Home</Nav.Link>
-              <Nav.Link href="/aboutme" >About Me</Nav.Link>
-              <Nav.Link href="/experience">Experience</Nav.Link>
-              <Nav.Link href="/contact">Contact</Nav.Link>
+              <Nav.Link href="/#/aboutme" >About Me</Nav.Link>
+              <Nav.Link href="/#/experience">Experience</Nav.Link>
+              <Nav.Link href="/#/contact">Contact</Nav.Link>
             </Nav>
         </Col>
       </Row>
