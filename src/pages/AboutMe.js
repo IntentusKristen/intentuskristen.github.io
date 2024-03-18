@@ -27,8 +27,11 @@ const AboutMe = () => {
                             
                             <p>👋🏼 - I'm Kristen! <br></br>
                             📚 - I am currently at Western University, pursuing a dual degree in software engineering and business.<br></br> 
-                            👩🏻‍💻 - I've done a variety of work ranging from full-stack, research, production engineering and more!</p>
-
+                            👩🏻‍💻 - I've done a variety of work ranging from full-stack, research, production engineering and more! <br></br>
+                            🌟 - In my free time, I love going on food adventures, playing TFT, and travelling. <br></br><br></br>
+                            Thanks for stopping by my website! 
+                            </p>
+                         
                         </div>
                         <button onClick={() => window.open(resume,"_blank")}>Check out my resume here<ArrowRightCircle size={25}/></button>
                     </Col>
