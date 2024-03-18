@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Container, Row } from "react-bootstrap";
-import headshot from "../assets/img/headshot.jpg";
+import headshot from "../assets/img/headshot.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import resume from "../assets/img/resume.pdf"
 
@@ -26,10 +26,8 @@ const AboutMe = () => {
                         <div className="d-flex justify-content-left" style={{textAlign: 'left'}}>
                             
                             <p>👋🏼 - I'm Kristen! <br></br>
-                            📚 - I am currently in my third year at Western University, pursuing a dual degree in software engineering and business.<br></br> 
-                            👩🏻‍💻 - My main coding languages are Python and JavaScript.<br></br><br></br>
-                            I'm a curious and driven individual who loves to learn new things. I'm super interested in anything tech related, especially topics related to scalability, product management, and web development.
-                            </p>
+                            📚 - I am currently at Western University, pursuing a dual degree in software engineering and business.<br></br> 
+                            👩🏻‍💻 - I've done a variety of work ranging from full-stack, research, production engineering and more!</p>
 
                         </div>
                         <button onClick={() => window.open(resume,"_blank")}>Check out my resume here<ArrowRightCircle size={25}/></button>

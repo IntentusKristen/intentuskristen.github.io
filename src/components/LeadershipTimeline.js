@@ -51,7 +51,7 @@ export const LeadershipTimeline = () => {
             </TimelineSeparator>
             <TimelineContent>
                 <div style={{paddingLeft:'25px'}}>
-                <Typography variant='h5' >Co-President - Innovation & Entrepreneurship Club</Typography>
+                <Typography variant='h5' >President - Innovation & Entrepreneurship Club</Typography>
                 <Typography variant='subtitle1' sx={{color: '#f1eff0'}}>May 2022 - Present</Typography>
                 <Typography variant='p' display='block'>- Planned and executed interactive club events to encourage leadership and build business acumen for club members; efforts increased student involvement by 36%.</Typography>
                 <Typography variant='p' display='block'>- Managed an executive team of 12 members and directed bi-weekly meetings to delegate important tasks; enhanced team unity and ensured club activities ran smoothly.</Typography>
