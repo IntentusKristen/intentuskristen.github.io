@@ -51,11 +51,12 @@ export const WorkTimeline = () => {
             </TimelineSeparator>
             <TimelineContent>
                 <div style={{paddingLeft:'25px'}}>
-                <Typography variant='h5' >Technical Production Analyst - Citibank</Typography>
+                <Typography variant='h5' >Software Developer Intern - Citibank</Typography>
                 <Typography variant='subtitle1' sx={{color: '#f1eff0'}}>May 2023 - Aug 2023</Typography>
-                <Typography variant='p' display='block'>- Achieved real time accuracy and improved efficiency by automating EOD transaction checkouts through web scraping data and building a summary table visualization using pandas.</Typography>
-                <Typography variant='p' display='block'>- Designed and implemented an automation script that efficiently sorted daily production tasks, parsed error log files, and generated comprehensive monthly job failure reports for a portfolio of 800+ jobs; efforts improved accuracy rate to 100% and boosted efficiency by 180%.</Typography>
-                <Typography variant='p' display='block'>- Coded a scheduled script to check completion of inbound feeds and send email alerts, streamlining daily operations by allowing dependent jobs to be run or placed on hold accordingly to reduce total job failure.</Typography>
+                <Typography variant='p' display='block'>- Achieved real time accuracy and improved efficiency by automating EOD transaction checkouts through web scraping data and building a summary table visualization using Python, BeautifulSoup and Pandas.</Typography>
+                <Typography variant='p' display='block'>- Created a script to sort daily production tasks, parse error log files, and generate monthly job failure reports for a portfolio of 800+ jobs; efforts improved accuracy rate to 100% and boosted efficiency by 180%.</Typography>
+                <Typography variant='p' display='block'>- Fully automated scripts through creating and deploying DAG workflow processes using Apache Airflow.</Typography>
+                <Typography variant='p' display='block'>- Coded tests to check completion of inbound feeds and send email alerts using Bash and crontab, reducing total job failures.</Typography>
                 </div>
             </TimelineContent>
         </TimelineItem>
@@ -69,11 +70,17 @@ export const WorkTimeline = () => {
             </TimelineSeparator>
             <TimelineContent>
                 <div style={{paddingLeft:'25px'}}>
-                <Typography variant='h5' >Production Engineering Fellow - Meta/MLH</Typography>
+                <Typography variant='h5' >Production Engineering Fellow (MLH) - Meta</Typography>
                 <Typography variant='subtitle1' sx={{color: '#f1eff0'}}>May 2022 - Aug 2022</Typography>
-                <Typography variant='p' display='block'>- Created an open-source, full-stack, personal portfolio website template using Python, Flask, Jinja, MySQL, Nginx, Docker, and unittest, guaranteeing easy and flexible redeployment of code.</Typography>
-                <Typography variant='p' display='block'>- Applied continuous integration and continuous deployment to automated testing and deployment workflows; contributions improved troubleshooting process.</Typography>
-                <Typography variant='p' display='block'>- Set up system and container monitoring, alerting, and visualization using Prometheus and Grafana; led to optimized computer processing and memory usage.</Typography>
+                <Typography variant='p' display='block'>- Built an open-source, full-stack personal portfolio website using HTML/CSS and the Jinja templating engine, creating a
+flexible and reusable frontend for future scaling.</Typography>
+                <Typography variant='p' display='block'>- Created REST API endpoints using Flask; integrated with a MySQL database to handle user input and data
+.</Typography>
+                <Typography variant='p' display='block'>- Containerized website using Docker to guarantee easy and flexible redeployment of code for future users.</Typography>
+                <Typography variant='p' display='block'>- Implemented automated tests into the website’s CI/CD pipeline; contributions improved troubleshooting process.</Typography>
+                <Typography variant='p' display='block'>- Set up system and container monitoring and alerting using Prometheus and Grafana to visualize resource utilization
+.</Typography>
+                
                 </div>
             </TimelineContent>
         </TimelineItem>
@@ -87,31 +94,18 @@ export const WorkTimeline = () => {
             </TimelineSeparator>
             <TimelineContent>
               <div style={{paddingLeft:'25px'}}>
-                <Typography variant='h5'>Data Research Intern - Western University</Typography>
-                <Typography variant='subtitle1' sx={{color: '#f1eff0'}}>May 2022 - Aug 2022</Typography>
-                <Typography variant='p'>- Developed a user-friendly recording GUI that encodes the maximum quality and FPS of a camera hardware; implemented code set up the framework for future video data collection.</Typography>
-                <Typography variant='p' display='block'>- Implemented code for customizable file organization, giving users the flexibility to categorize storage of data.</Typography>
+                <Typography variant='h5'>Data Science Intern - Western University</Typography>
+                <Typography variant='subtitle1' sx={{color: '#f1eff0'}}>May 2021 - Aug 2021</Typography>
+                <Typography variant='p'>- Developed a user-friendly recording GUI that encodes the maximum quality and FPS of a camera hardware; creating the
+code framework for future video data collection.</Typography>
+                <Typography variant='p' display='block'>- Conducted multiple recording tests with the Luxonis Oak-D camera and documented hardware and software limitations,
+efforts ensured a smooth transition for future interns.</Typography>
+<Typography variant='p' display='block'>- Implemented code for customized file organization, giving users the flexibility to categorize storage of data.</Typography>
                 <Typography variant='p' display='block'>- Received the NSERC Undergraduate Student Research Award ($8400), a national research award in Canada.</Typography>
               </div>
             </TimelineContent>
         </TimelineItem>
 
-        <TimelineItem>
-            <TimelineSeparator>
-                <TimelineDot sx ={{backgroundColor: '#ffffff'}}>
-                <BrushIcon sx={{color: '#000000'}}/>
-                </TimelineDot>
-                <TimelineConnector sx ={{backgroundColor: '#ffffff'}}/>
-            </TimelineSeparator>
-            <TimelineContent>
-            <div style={{paddingLeft:'25px'}}>
-                <Typography variant='h5'>Graphic Design & Marketing - GetGrooop Inc.</Typography>
-                <Typography variant='subtitle1' sx={{color: '#f1eff0'}}>May 2021 - Jan 2022</Typography>
-                <Typography variant='p'>- Analyzed social media algorithms using Planoly and implemented a new marketing strategy, boosting business outreach by 1051% and content interactions by 333%.</Typography>
-                <Typography variant='p' display='block'>- Reconstructed numerous marketing programs and platforms such as Instagram, business website, marketing brochures, and advertisements, resulting in a revitalizing rebranding of the company’s brand image.</Typography>
-            </div>
-            </TimelineContent>
-        </TimelineItem>
     </Timeline>
     </div>
     </ThemeProvider>
